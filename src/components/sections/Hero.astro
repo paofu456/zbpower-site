@@ -1,0 +1,60 @@
+---
+import Button from "../ui/Button.astro";
+import Container from "../ui/Container.astro";
+---
+
+<section class="relative isolate overflow-hidden bg-[var(--color-ink)] text-white">
+  <div class="absolute inset-0 -z-10">
+    <img src="/media/company/factory-floor.jpg" alt="" aria-hidden="true" class="h-full w-full object-cover" />
+    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,20,37,0.97)_0%,rgba(7,36,64,0.91)_48%,rgba(8,50,88,0.48)_100%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_78%_28%,rgba(40,184,232,0.26),transparent_34%)]"></div>
+  </div>
+
+  <Container class="relative grid min-h-[760px] items-center gap-14 py-20 lg:grid-cols-[1.07fr_.93fr] lg:py-24">
+    <div class="max-w-3xl">
+      <p class="mb-6 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.2em] text-[var(--color-accent)]">
+        <span class="h-px w-10 bg-[var(--color-accent)]"></span>
+        OEM / ODM lithium battery manufacturing · Since 2012
+      </p>
+      <h1 class="max-w-4xl text-[3.4rem] font-extrabold leading-[1.02] sm:text-6xl lg:text-[4.5rem]">Lithium battery packs built for motion and storage.</h1>
+      <p class="mt-7 max-w-2xl text-lg leading-8 text-white/75 sm:text-xl">ZBPOWER develops and manufactures packs for e-mobility, lead-acid replacement and home or commercial energy storage — with engineering and production support from selection to delivery.</p>
+      <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+        <Button href="/contact/" class="bg-[var(--color-accent)] text-[var(--color-ink)] hover:bg-white">Request a quote</Button>
+        <Button href="/products/" variant="secondary" class="border-white/25 bg-white/10 text-white hover:border-white">Explore product lines</Button>
+      </div>
+      <div class="mt-10 grid max-w-xl grid-cols-2 gap-6 border-t border-white/15 pt-6">
+        <div>
+          <p class="text-3xl font-extrabold tracking-tight">14 years</p>
+          <p class="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/50">Battery manufacturing</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold tracking-tight">14,000㎡</p>
+          <p class="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/50">Production base</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative hidden lg:block">
+      <div class="absolute -inset-6 rounded-[1.75rem] border border-white/15" aria-hidden="true"></div>
+      <div class="relative overflow-hidden rounded-[1.25rem] bg-white p-6 text-[var(--color-ink)] shadow-2xl">
+        <div class="flex items-center justify-between gap-4 border-b border-[var(--color-line)] pb-4">
+          <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-[var(--color-primary)]">E-mobility platform</p>
+          <p class="text-xs font-bold text-[var(--color-muted)]">OEM / ODM</p>
+        </div>
+        <div class="mt-4 flex min-h-[360px] items-center justify-center rounded-lg bg-[#f1f6fa] p-8">
+          <img src="/media/products/e-mobility-battery.jpg" alt="ZBPOWER e-bike lithium battery pack" width="583" height="404" class="max-h-[290px] w-full object-contain" />
+        </div>
+        <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+          <div class="rounded-lg bg-[#f1f6fa] px-4 py-3">
+            <p class="text-[10px] font-extrabold uppercase tracking-[0.14em] text-[var(--color-muted)]">Daily output</p>
+            <p class="mt-1 text-xl font-extrabold">2,000+ packs</p>
+          </div>
+          <div class="rounded-lg bg-[#f1f6fa] px-4 py-3">
+            <p class="text-[10px] font-extrabold uppercase tracking-[0.14em] text-[var(--color-muted)]">Global reach</p>
+            <p class="mt-1 text-xl font-extrabold">20+ countries</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>

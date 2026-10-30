@@ -1,0 +1,25 @@
+---
+import ContactCta from "../components/sections/ContactCta.astro";
+import FeaturedProducts from "../components/sections/FeaturedProducts.astro";
+import Hero from "../components/sections/Hero.astro";
+import CertificationsNetwork from "../components/sections/CertificationsNetwork.astro";
+import FactoryQuality from "../components/sections/FactoryQuality.astro";
+import OemProcess from "../components/sections/OemProcess.astro";
+import ProofStats from "../components/sections/ProofStats.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { makePageTitle } from "../lib/seo";
+---
+
+<BaseLayout
+  title={makePageTitle()}
+  description="ZBPOWER manufactures lithium battery packs for e-mobility, lead-acid replacement and energy storage, with OEM/ODM support from selection to production."
+  image="/media/company/factory-floor.jpg"
+>
+  <Hero />
+  <FeaturedProducts />
+  <ProofStats />
+  <FactoryQuality />
+  <OemProcess />
+  <CertificationsNetwork />
+  <ContactCta />
+</BaseLayout>

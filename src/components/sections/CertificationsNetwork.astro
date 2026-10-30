@@ -1,0 +1,33 @@
+---
+import Container from "../ui/Container.astro";
+
+const certifications = ["EN50604", "UL2054 / UL2271", "UN38.3", "CE", "IEC", "RoHS", "UKCA"];
+---
+
+<section class="relative isolate overflow-hidden bg-[var(--color-ink)] py-24 text-white sm:py-28">
+  <div class="absolute inset-0 -z-10">
+    <img src="/media/company/global-network.jpg" alt="" aria-hidden="true" class="h-full w-full object-cover opacity-25" />
+    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,20,37,0.98)_0%,rgba(5,27,48,0.84)_55%,rgba(5,27,48,0.72)_100%)]"></div>
+  </div>
+
+  <Container class="grid gap-14 lg:grid-cols-[.95fr_1.05fr] lg:items-center">
+    <div>
+      <p class="text-xs font-extrabold uppercase tracking-[0.18em] text-[var(--color-accent)]">Certification &amp; global service</p>
+      <h2 class="mt-5 text-3xl font-extrabold leading-tight sm:text-5xl">Built for international battery programs.</h2>
+      <p class="mt-5 max-w-xl text-lg leading-8 text-white/65">ZBPOWER's company profile lists customers in more than 20 countries and regions, with branches in France and Pakistan and a technical support centre for Central and Eastern Europe.</p>
+      <p class="mt-4 text-sm leading-6 text-white/45">Certification coverage varies by product and market. Final documents are confirmed for each project.</p>
+    </div>
+
+    <div class="rounded-[1.25rem] border border-white/15 bg-white/[0.07] p-7 backdrop-blur-sm sm:p-9">
+      <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-white/50">Certification coverage includes</p>
+      <div class="mt-6 flex flex-wrap gap-2.5">
+        {certifications.map((item) => <span class="rounded-[0.35rem] border border-white/20 bg-white/10 px-3 py-2 text-sm font-bold text-white/85">{item}</span>)}
+      </div>
+      <div class="mt-8 grid grid-cols-3 gap-4 border-t border-white/15 pt-7">
+        <div><p class="text-2xl font-extrabold">20+</p><p class="mt-1 text-xs leading-5 text-white/45">Countries &amp; regions</p></div>
+        <div><p class="text-2xl font-extrabold">2</p><p class="mt-1 text-xs leading-5 text-white/45">International branches</p></div>
+        <div><p class="text-2xl font-extrabold">24</p><p class="mt-1 text-xs leading-5 text-white/45">Technical patents</p></div>
+      </div>
+    </div>
+  </Container>
+</section>

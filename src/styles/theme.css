@@ -1,0 +1,14 @@
+:root {
+  --color-ink: #0b1f33;
+  --color-muted: #53677a;
+  --color-surface: #f3f7fb;
+  --color-card: #ffffff;
+  --color-line: #d9e5ef;
+  --color-primary: #0a67b1;
+  --color-primary-dark: #064b82;
+  --color-accent: #28b8e8;
+  --font-heading: "Manrope", "Arial", sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+  --shadow-card: 0 24px 60px rgba(11, 31, 51, 0.1);
+  --radius-card: 1rem;
+}

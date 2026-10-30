@@ -1,0 +1,33 @@
+---
+import Container from "../ui/Container.astro";
+
+const steps = [
+  ["01", "Application review", "Share the vehicle, storage system or equipment, target market and operating requirements."],
+  ["02", "Battery selection", "Review the suitable chemistry, format, enclosure and electrical requirements."],
+  ["03", "Prototype & validation", "Build and test the proposed pack against agreed requirements."],
+  ["04", "Production & aging test", "Move the approved design into controlled production and testing."],
+  ["05", "OEM / ODM delivery", "Pack, document and prepare the battery packs for shipment."],
+];
+---
+
+<section id="oem" class="bg-[var(--color-surface)] py-24 sm:py-28">
+  <Container>
+    <div class="grid gap-8 lg:grid-cols-[1fr_.8fr] lg:items-end">
+      <div>
+        <p class="eyebrow mb-4">OEM / ODM cooperation</p>
+        <h2 class="text-3xl font-extrabold leading-tight text-[var(--color-ink)] sm:text-5xl">A clear path from brief to battery pack.</h2>
+      </div>
+      <p class="max-w-xl text-lg leading-8 text-[var(--color-muted)] lg:justify-self-end">The right starting point depends on how closely the pack needs to fit the final product. Share the application first; the technical scope follows.</p>
+    </div>
+
+    <ol class="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+      {steps.map(([number, title, description]) => (
+        <li class="border-t-2 border-[var(--color-primary)] bg-white p-5 shadow-[0_8px_30px_rgba(11,31,51,0.04)]">
+          <p class="text-xs font-extrabold tracking-[0.16em] text-[var(--color-primary)]">{number}</p>
+          <h3 class="mt-5 text-lg font-extrabold leading-6">{title}</h3>
+          <p class="mt-3 text-sm leading-6 text-[var(--color-muted)]">{description}</p>
+        </li>
+      ))}
+    </ol>
+  </Container>
+</section>

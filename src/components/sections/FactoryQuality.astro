@@ -1,0 +1,39 @@
+---
+import Button from "../ui/Button.astro";
+import Container from "../ui/Container.astro";
+---
+
+<section class="overflow-hidden bg-white py-24 sm:py-28">
+  <Container class="grid items-center gap-14 lg:grid-cols-[1.08fr_.92fr] lg:gap-20">
+    <div class="relative">
+      <img src="/media/company/factory-floor.jpg" alt="ZBPOWER battery production floor" width="2039" height="1252" class="aspect-[4/3] w-full rounded-[1.25rem] object-cover shadow-[var(--shadow-card)]" />
+      <div class="absolute -bottom-7 right-4 hidden w-52 overflow-hidden rounded-xl border-4 border-white bg-white shadow-xl sm:block">
+        <img src="/media/company/aging-test-racks.jpg" alt="Battery aging test racks in the ZBPOWER laboratory" width="1280" height="1154" class="aspect-square w-full object-cover" />
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow mb-4">Manufacturing &amp; quality</p>
+      <h2 class="text-3xl font-extrabold leading-tight text-[var(--color-ink)] sm:text-5xl">Manufacturing depth you can inspect.</h2>
+      <p class="mt-5 text-lg leading-8 text-[var(--color-muted)]">Production, testing and quality control are kept close together so battery packs can move from sample approval into repeatable output.</p>
+      <dl class="mt-9 grid grid-cols-2 gap-4">
+        <div class="border-t-2 border-[var(--color-primary)] pt-4">
+          <dt class="text-2xl font-extrabold">3 + 3</dt>
+          <dd class="mt-1 text-sm leading-6 text-[var(--color-muted)]">Power and storage production lines</dd>
+        </div>
+        <div class="border-t-2 border-[var(--color-primary)] pt-4">
+          <dt class="text-2xl font-extrabold">10</dt>
+          <dd class="mt-1 text-sm leading-6 text-[var(--color-muted)]">Laser welding machines</dd>
+        </div>
+        <div class="border-t-2 border-[var(--color-primary)] pt-4">
+          <dt class="text-2xl font-extrabold">600+</dt>
+          <dd class="mt-1 text-sm leading-6 text-[var(--color-muted)]">Battery aging test points</dd>
+        </div>
+        <div class="border-t-2 border-[var(--color-primary)] pt-4">
+          <dt class="text-2xl font-extrabold">30,000+</dt>
+          <dd class="mt-1 text-sm leading-6 text-[var(--color-muted)]">Cells consumed per day</dd>
+        </div>
+      </dl>
+      <Button href="/about/" variant="text" class="mt-8 px-0">See the manufacturing profile →</Button>
+    </div>
+  </Container>
+</section>
